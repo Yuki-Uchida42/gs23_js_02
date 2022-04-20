@@ -16,6 +16,7 @@
     <ul>
         <li id="save">Save</li>
         <li id="clear">Clear</li>
+        <li id="back">Back</li>
     </ul>
 </main>
 <table id="list">
@@ -55,6 +56,13 @@ for(let i=0; i<localStorage.length; i++){
                 `;
     $("#list").append(html);
 }
+
+//4.一つ戻る
+
+$("#back").on("click",function(){
+    history.back();
+});
+
 
 </script>
 <footer><small>G's</small></footer>
